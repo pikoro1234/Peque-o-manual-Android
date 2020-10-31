@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>integracion</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="css/android_icon.png">
+	<!--<link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/v0bcab1972c3b1579b82e221c810ad3eb061cbd75c8520328bda82087ceb07528/android/images/favicon.png">-->
+</head>
+<body style="margin: 30px auto;">
+	<!--header-->
+	<header>
+		<div class="titulo">
+			<h1 class="titulo-android">ANDROID STUDIO</h1>
+			<!--<a href="index.html" class="link-image"><img src="css/android.jpg" class="image-android" width="250" height="250"></a>-->
+		</div>
+		<div class="top-bar">
+			<ul>
+				<a href="index.html"><li>Home</li></a>
+				<a href="requisitos.html"><li> Requisitos S.O</li></a>
+				<a href="instalacion.html"><li>Instalacion</li></a>
+				<a href="accesodirecto.html"><li>Guia del Usuario</li></a>
+				<a href="integracion.html"><li>Integracion GitHub</li></a>
+				<a href="debuger.html"><li>Debugar Codigo</li></a>
+			</ul>
+		</div>
+	</header>
+	<!--header-->
+	<div class="content">
+		<h3 style="padding-bottom: 10px;">¿Qué son Git y GitHub?</h3>
+		<p><b>Git</b> es un sistema de <b>control de versiones</b> que nos facilita la gestión de un proyecto de desarrollo <b>software</b>, controlando los cambios que se produzcan en los distintos archivos del proyecto. Nos permite acceder y recuperar versiones anteriores de forma que podemos <b>‘volver’</b> y continuar otra vez a partir de ese punto (por ejemplo tras detectar un error que cometimos) o desarrollar y mantener diferentes <b>versiones</b> o <b>ramas</b> de forma paralela (por ejemplo, una versión principal y otra test para realizar pruebas).</p>
+		<p><b>GitHub</b> es una plataforma de colaboración de <b>desarrollo</b> de <b>software</b> que utiliza el sistema de control de <b>versiones Git</b>, pero los archivos en vez de almacenarse en un repositorio en nuestro equipo, es compartido y está accesible en la <b>Web</b>. Hay más plataformas web de este tipo que usen <b>Git</b>, como <b>GitLab</b> o <b>Bicbucket</b>, pero <b>GitHub</b> es el  host sin duda más popular y el que alberga mayor número de proyectos.  Es por tanto un sistema que gestiona el trabajo en grupo (o el nuestro propio si programamos de forma individual pero queremos acceder desde múltiples equipos), integrando los cambios realizados por cada usuario en el proyecto y que podemos utilizar de forma gratuita si nuestros proyectos son públicos, o pagando una pequeña cuota mensual si queremos que se mantengan privados.</p>
+		<h3>Requisitos previos:</h3>
+		<ul>
+			<li>Descarga de <b>GitHub</b> para <b>Windows</b>. Incluye la instalación del control de versiones <b>Git</b> (este paso es opcional):<a style="text-decoration: none; color: #444;" href="https://desktop.github.com/">https://windows.github.com</a>.</li>
+			<li>Crear cuenta de usuario en <b>GitHub</b>:<a style="text-decoration: none; color: #444;" href="https://github.com/join">https://github.com/join</a>.</li>
+			<li>Crear un repositorio indicando el nombre y la descripción (opcional). Esta opción permitirá subir los proyectos y almacenarlos.</li>
+			<li>Comprobar inicio de sesión en <b>GitHub</b> desde <b>Android Studio</b> a través de la ruta <b>File > Settings > Version Control > GitHub</b>, e indicar los datos de la cuenta de usuario creada. A continuación pulsar sobre el botón <b>«Test»</b> para comprobar que los datos de conexión son correctos:</li>
+		</ul>
+		<div class="imagenes-integracion" style="padding-top: 20px;">
+			<img src="css/SettingsVersionControlGitHub.png" width="900" height="400" alt="">
+		</div>
+		<p style="padding-top: 10px;">Al finalizar la instalación de <b>GitHub</b>, se deberá seguir la ruta <b>File > Version Control > Git</b> (esta opción no será necesaria si no se ha realizado el paso 1), e indicar el ejecutable del control de versiones <b>Git</b> instalado en pasos anteriores. Posteriormente se pulsará en el botón <b>«Test»</b> para comprobar que todo funcione correctamente:</p>
+		<div class="imagenes-integracion">
+				<img src="css/SettingsVersionControlGit_3.png" width="900" height="400" alt="">
+		</div>
+		<h3 style="padding-top: 20px;">¿Cómo usar GitHub desde el entorno Android Studio?</h3>
+		<p>Pasos para exportar un proyecto de <b>Android Studio</b> al repositorio <b>GitHub</b>:</p>
+		<ul>
+			<li>Seleccionaremos el proyecto que se desea compartir con la plataforma <b>GitHub</b>.</li>
+			<li>A continuación, seguiremos la secuencia siguiente <b>VCS > Import into Version Control > Share project on GitHub</b>:</li>
+		</ul>
+		<div class="imagenes-integracion" style="padding-top: 20px; display: flex;">
+			<div class="caja-imagen" style="width: 50%;">
+				<img src="css/SecuenciaImportGitHub.png" width="800" height="400" alt="">
+			</div>
+				<p style="width: 50%; padding-top: 40px;margin-top: 30px;">Tras pulsar en la opción indicada en el paso anterior, se mostrará una ventana para la creación de un nuevo repositorio, pulsando posteriormente en el botón <b>«Share»</b>. Tras indicar en la nueva ventana los archivos que se incluirán en el proyecto, se pulsará en <b>«OK»</b>. El proyecto ya estará listo para ser compartido y gestionado mediante <b>GitHub</b>:</p>	
+		</div>
+		<div class="imagenes-integracion">
+				<img src="css/VentanasImportGitHub.png" style="padding-top: 20px;" width="900" height="400" alt="">
+		</div>
+		<h3 style="padding-top: 20px;">Pasos para importar un proyecto almacenado en el repositorio GitHub:</h3>
+		<div class="contenido-footer" style="display: flex;">
+			<p style="width: 50%; padding-top: 20px;padding-right: 30px;">Se inicia <b>Android Studio</b> (en caso de tener abierto el editor con un proyecto, será posible cerrarlo desde <b>File > Close Project</b>). Desde la pantalla de bienvenida de <b>Android Studio (Android Launcher)</b>, se seleccionará la opción <b>«Check out project from Version Control»</b> (es posible acceder a esta opción si se selecciona la secuencia <b>VCS > Checkout from Version Control > GitHub</b> desde el editor de <b>Android Studio</b>), y en el desplegable que se mostrará, se seleccionará la opción <b>«GitHub»</b>. Este listado hace referencia a los repositorios y controles de versiones que soporta <b>Android Studio</b>:</p>
+			<div class="img" style="width: 50%; padding-top: 20px;">
+				<img src="css/importacion_github.png" width="400" height="400" alt="">
+			</div>
+		</div>
+
+		<div class="footer-bar" style="display: flex; flex-direction: row-reverse; padding-top: 20px;">
+			<p style="padding-left: 20px;">El siguiente paso será comprobar que el repositorio creado existe (apartado de <b>«Requisitos previos»</b>), para ello se pulsará sobre el botón <b>«Test»</b>, situado junto al campo que contiene la URL del usuario y repositorio seleccionado. Una vez muestre un mensaje de confirmación de que la prueba ha sido correcta, comprobamos que el resto de datos introducidos en el formulario (directorio local de proyectos <b>Android Studio</b> y nombre del directorio) son válidos:</p>
+			<div class="fotter-reverse">
+				<img src="css/CloneRepository-footer.png" width="400" height="400" alt="">
+			</div>
+		</div>
+		<p>Por último, pulsaremos el botón <b>«Clone»</b>, que posibilitará la clonación de los proyectos almacenados en el repositorio de <b>GitHub</b> dentro del directorio local de nuestro <b>PC</b>.</p>
+
+	</div>
+
+	<!--footer-->
+	<footer id="footer">
+		<div class="footer-left">
+			<p>copyright© 2019 FLYPHI-BIT.S.R.L</p>
+		</div> 
+		<div class="footer-rigth">
+			<img class="icon-android" src="css/android.png" alt="logo android" width="35" height="35">	
+		</div>	
+	</footer>
+	<!--footer-->
+</body>
+</html>

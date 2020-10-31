@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>instalacion</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="css/android_icon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--<link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/v0bcab1972c3b1579b82e221c810ad3eb061cbd75c8520328bda82087ceb07528/android/images/favicon.png">-->
+</head>
+<body style="margin: 30px auto;">
+	<!--header-->
+	<header>
+		<div class="titulo">
+			<h1 style="font-size: 2em; margin-top: 10px; margin-bottom: 0px; font-weight: bold;" class="titulo-android">ANDROID STUDIO</h1>
+			<!--<a href="index.html" class="link-image"><img src="css/android.jpg" class="image-android" width="250" height="250"></a>-->
+		</div>
+		<div class="top-bar">
+			<ul>
+				<a href="index.html"><li>Home</li></a>
+				<a href="requisitos.html"><li> Requisitos S.O</li></a>
+				<a href="instalacion.html"><li>Instalacion</li></a>
+				<a href="accesodirecto.html"><li>Guia del Usuario</li></a>
+				<a href="integracion.html"><li>Integracion GitHub</li></a>
+				<a href="debuger.html"><li>Debugar Codigo</li></a>
+			</ul>
+		</div>
+	</header>
+	<!--header-->
+	<div class="content">
+		<h2>Cómo instalar Android Studio</h2>
+		<p>Primero, asegúrate de descargar la versión más reciente de <strong>Android Studio</strong>. <br>
+		De la pagina oficial de <span><a href="https://developer.android.com/studio/?gclid=Cj0KCQiAtrnuBRDXARIsABiN-7CF6rGIj0qc5-38nepV-tz1e0gy3tKxrWB3GasmbBB3mSm2Xd1gVR8aAhqeEALw_wcB">Android.com</a></span></p>
+		<h2>Windows</h2>
+		<p>Para instalar Android Studio en Windows, haz lo siguiente:</p>
+		<ul>
+			<li>Si descargaste un archivo <span style="background-color: #40d7e27c;">.exe</span> (recomendado), haz doble clic en él para iniciarlo.</li>
+			<li>Si descargaste un archivo <span style="background-color: #40d7e27c;">.zip</span>, extráelo y copia la carpeta <strong>android-studio</strong> en tu carpeta <strong>Archivos de programa</strong>. A continuación, abre la carpeta <strong>android-studio > bin</strong> y, luego, inicia <span style="background-color: #40d7e27c;">studio64.exe</span> (para máquinas de 64 bits) o <span style="background-color: #40d7e27c;">studio.exe</span> (para las de 32 bits).</li>
+			<li>Sigue los pasos del asistente de configuración en Android Studio y asegúrate de instalar los paquetes de SDK que recomiende.</li>
+		</ul>
+
+		<h2>Mac</h2>
+		<p>Para instalar Android Studio en tu Mac, haz lo siguiente:</p>
+		<ul>
+			<li>Ejecuta el archivo <strong>DMG</strong> de <strong>Android Studio</strong>.</li>
+			<li>Arrastra y suelta <strong>Android Studio</strong> en la carpeta <strong>"Aplicaciones"</strong> y, luego, inícialo.</li>
+			<li>Selecciona si deseas importar opciones de configuración previas de <strong>Android Studio</strong> y, luego, haz clic en <strong>OK</strong>.</li>
+			<li>El asistente de configuración de <strong>Android Studio</strong> te guiará por el resto de la configuración, lo que incluye la descarga de los componentes del <strong>SDK</strong> de <strong>Android</strong> que se necesiten para el desarrollo.</li>
+		</ul>
+
+		<h2>Linux</h2>
+		<p>Para instalar Android Studio en Linux, haz lo siguiente:</p>
+		<ul>
+			<li>Extrae el archivo <span style="background-color: #40d7e27c;">.zip</span> que descargaste en una ubicación adecuada para tus aplicaciones por ejemplo, dentro de <span style="background-color: #40d7e27c;">/usr/local/</span> para tu perfil de <strong>usuario</strong> de <span style="background-color: #40d7e27c;">/opt/</span> para usuarios compartidos.</li>
+			<li>Si usas una versión de <strong>Linux</strong> de <strong>64 bits</strong>, asegúrate de instalar primero las bibliotecas requeridas para máquinas de <strong>64 bits</strong>.</li>
+			<li>Para iniciar <strong>Android Studio</strong>, abre una terminal, navega al directorio <span style="background-color: #40d7e27c;">android-studio/bin/</span> y ejecuta <span style="background-color: #40d7e27c;">studio.sh</span>.</li>
+			<li>Selecciona si deseas importar opciones de configuración previas de <strong>Android Studio</strong> o no y, luego, haz clic en <strong>OK</strong>.</li>
+			<li>El asistente de configuración de <strong>Android Studio</strong> te guiará por el resto de la configuración, lo que incluye la descarga de los componentes del <strong>SDK</strong> de <strong>Android</strong> que se necesiten para el desarrollo.</li>
+		</ul>
+
+		<h3>Bibliotecas requeridas para máquinas de 64 bits</h3>
+		<p>Si ejecutas una versión de Ubuntu de 64 bits, deberás instalar algunas bibliotecas de 32 bits con el siguiente comando:</p>
+		<span style=" padding: 4px; background-color: #cecece;">sudo yum install zlib.i686 ncurses-libs.i686 bzip2-libs.i686</span>
+
+	</div>
+
+	<!--footer-->
+	<footer id="footer">
+		<div class="footer-left">
+			<p>copyright© 2019 FLYPHI-BIT.S.R.L</p>
+		</div> 
+		<div class="footer-rigth">
+			<img class="icon-android" src="css/android.png" alt="logo android" width="35" height="35">	
+		</div>	
+	</footer>
+	<!--footer-->
+</body>
+</html>

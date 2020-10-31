@@ -1,0 +1,61 @@
+*{margin: 0; padding: 0;}
+body{background-color: #fefefe; width: 90%; margin: 20px auto; margin-bottom: 0; }
+
+.open-span{cursor: pointer;z-index: 20000;box-shadow: 0px 5px 10px 3px #cecece; border-style: double; color:#4B4949; background-color: #EDE8E8; width: 500px; padding: 50px 15px;  left: -700px; position: absolute; text-align: center;}
+
+.span-background{position:fixed;top: 0;bottom: 0;left: 0;right: 0;z-index: 10000;opacity: 0.6;background-color: #000;}
+
+.left-span{left: 380px;transition: 1s ease;border-radius: 30px;display: flex;flex-direction: column;}
+
+html body .information{padding: 20px; width: 220px; margin: 2px auto;color: #f5f5f5;border-radius: 30px;}
+
+html body .information svg{color: #44E11D;margin-left: 10px;}
+
+html body .information:hover{background-color: #EDE8E8!important;color: #444; border: solid 1px #444;}
+
+html body .information:hover>svg{color: #444;}
+
+html body .information:hover ~ .autor{display: flex!important;box-shadow:8px 7px 15px 3px #cecece;}
+
+.alertacion{display: none;}
+
+html body #span-home:hover>.alertacion{display: block!important;}
+
+.autor{color: #f5f5f5;padding: 30px;display: flex;flex-direction: column;width: 300px; position: absolute;bottom: -110px;left: 102px; display: none;}
+
+body .titulo{width: 100%;margin-bottom: 40px; color: #444;}
+
+body .top-bar{width: 90%; margin: 20px auto;}
+
+body header{flex-wrap: wrap; text-align: center;}
+
+body .top-bar ul{list-style: none; display: flex; justify-content: space-between;}
+
+body .top-bar ul li{background-color: #09D151 ; padding: 15px 25px; }
+
+body .top-bar ul a {text-decoration: none; box-shadow: 1px 3px 8px 3px #cecece;}
+
+body .top-bar ul a li{color: #fefefe;}
+
+body .top-bar ul li:hover{background-color: #CACCCB; color: #444;}
+
+body .titulo-android{ letter-spacing: 10px; margin-top: 10px; }
+
+ol.lista-before{counter-reset: item;list-style-type: none;margin-left: 30px;padding-left: 0;}
+
+ol.lista-before>li::before{color: #fff;font-size: 12px;font-weight: 500;}
+
+ol.lista-before>li::before {background:#aa2e1e 1px 2px/20px no-repeat;-webkit-box-sizing: content-box;box-sizing: content-box;content: counter(item);counter-increment: item;margin-left: -30px;padding-left: 8px;position: absolute;width: 16px;}
+
+body .content{width: 90%; margin: 50px auto; box-shadow:0px 5px 10px 3px #cecece; padding: 30px;}
+
+body .content p{font-size: 18px; margin-bottom: 20px;}
+
+body .list{margin-left: 35px;}
+
+#footer{background-color: #09D151; color: #fefefe; padding: 20px; width: 90%; margin: 10px auto; box-shadow:8px 7px 15px 3px #cecece;}
+
+#footer:hover{background-color:#CACCCB; color: #444;}
+
+#footer .footer-rigth{float: right;position: relative; bottom: 34px;}
+

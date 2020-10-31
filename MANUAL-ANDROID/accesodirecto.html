@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>acceso directo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="css/android_icon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--<link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/v0bcab1972c3b1579b82e221c810ad3eb061cbd75c8520328bda82087ceb07528/android/images/favicon.png">-->
+</head>
+<body style="margin: 30px auto;">
+	<!--header-->
+	<header>
+		<div class="titulo">
+			<h1 style="font-size: 2em; margin-top: 10px; margin-bottom: 0px; font-weight: bold;" class="titulo-android">ANDROID STUDIO</h1>
+			<!--<a href="index.html" class="link-image"><img src="css/android.jpg" class="image-android" width="250" height="250"></a>-->
+		</div>
+		<div class="top-bar">
+			<ul>
+				<a href="index.html"><li>Home</li></a>
+				<a href="requisitos.html"><li> Requisitos S.O</li></a>
+				<a href="instalacion.html"><li>Instalacion</li></a>
+				<a href="accesodirecto.html"><li>Guia del Usuario</li></a>
+				<a href="integracion.html"><li>Integracion GitHub</li></a>
+				<a href="debuger.html"><li>Debugar Codigo</li></a>
+			</ul>
+		</div>
+	</header>
+	<!--header-->
+	<div class="content">
+		<p>En esta página, encontrará una introducción a las funciones básicas de <strong>Android Studio</strong>.</p>
+		<ul>
+			<li>Un <strong>emulador</strong> rápido y cargado de funciones</li>
+			<li>Un sistema de compilación flexible basado en <strong>Gradle</strong></li>
+			<li>Aplicación de cambios para insertar cambios de códigos y recursos a la aplicación en ejecución sin reiniciar la aplicación</li>
+			<li>Integración con <strong>GitHub</strong> y plantillas de código para ayudar a compilar funciones de aplicaciones comunes y también importar código de ejemplo</li>
+			<li>Compatibilidad con <strong>C++</strong> y <strong>NDK</strong></li>
+		</ul>
+		<h2>Estructura del proyecto</h2>
+		<div class="content-flex" style="display: flex; justify-content: center;padding-top: 20px;">
+			<div class="image" style="width: 50%;">
+				<img src="css/estructura-proyecto.png" width="500" height="450" alt="image estructura">
+			</div>
+			<div class="texto" style="line-height: 20px; width: 50%; padding-left: 30px;">
+				<p>De manera predeterminada, <strong>Android Studio</strong> muestra los archivos de su proyecto en la vista de proyecto de <strong>Android</strong>, como se ve en la Figura. Esta vista está organizada en módulos para que pueda acceder rápidamente a los archivos fuente clave de su proyecto.</p>
+				<ul>
+					<li><strong>manifiestos</strong> : Contiene el archivo <span style="background-color: rgb(22, 214, 208); padding: 4px; color:#fefefe;">AndroidManifest.xml</span>.</li>
+					<li><strong>java</strong> : Contiene los archivos de código fuente <strong>Java</strong>, incluido el código de prueba de <strong>JUnit</strong>.</li>
+					<li><strong>res</strong> : Contiene todos los recursos sin código, como diseños <strong>XML</strong>, cadenas de <strong>IU</strong> e imágenes de mapa de <strong>bits</strong>.</li>
+				</ul>
+			</div>
+		</div>
+		<h2 style="padding: 20px;">Interfaz de usuario</h2>
+		<img src="css/interfaz-usuario.png" height="600" width="900" alt="" style="padding-bottom: 30px;">
+		<ol class="lista-before" style="padding-top: 20px;">
+			<li>La barra de herramientas te permite realizar una gran variedad de acciones, como ejecutar tu aplicación e iniciar las herramientas de <strong>Android</strong>.</li>
+			<li>La barra de navegación te ayuda a explorar tu proyecto y abrir archivos para editar. Proporciona una vista más compacta de la estructura visible en la ventana Proyecto .</li>
+			<li>La ventana del editor es el área en la que puedes crear y modificar el código. Según el tipo de actividad actual, el editor puede cambiar. Por ejemplo, cuando ves un archivo de diseño, el editor muestra el Editor de diseño.</li>
+			<li>La barra de la ventana de herramientas se encuentra afuera de la ventana del <strong>IDE</strong> y contiene los botones que permiten expandir o contraer ventanas de herramientas individuales.</li>
+			<li>Las ventanas de herramientas te brindan acceso a tareas específicas, como la administración de proyectos, la búsqueda, el control de versiones, entre otras. Puedes expandirlas y contraerlas.</li>
+			<li>En la barra de estado , muestra el estado de tu proyecto y el <strong>IDE</strong>, además de advertencias o mensajes.</li>
+		</ol>
+		<h6 style="padding: 10px 0;">Combinaciones de teclas para algunas ventanas de herramientas útiles</h6>
+		<table class="table table-striped">
+			<thead>
+			  <tr>
+				<th scope="col">Ventana Herramientas</th>
+				<th scope="col">Windows y Linux</th>
+				<th scope="col">Mac</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<th scope="row">Proyecto</th>
+				<td>Alt + 1</td>
+				<td>Comando + 1</td>
+			  </tr>
+			  <tr>
+				<th scope="row">Control de versiones</th>
+				<td>Alt + 9</td>
+				<td>Comando + 9</td>
+			  </tr>
+			  <tr>
+				<th scope="row">Correr</th>
+				<td>Mayús + F10</td>
+				<td>Control + R</td>
+			  </tr>
+			  <tr>
+				<th scope="row">Depurar</th>
+				<td>Mayús + F9</td>
+				<td>Control + D</td>
+			  </tr>
+			  <tr>
+				<th scope="row">Logcat</th>
+				<td>Alt + 6</td>
+				<td>Comando + 6</td>
+			  </tr>
+			  <tr>
+				<th scope="row">Regresar al editor</th>
+				<td>Esc</td>
+				<td>Esc</td>
+			  </tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!--footer-->
+	<footer id="footer">
+		<div class="footer-left">
+			<p>copyright© 2019 FLYPHI-BIT.S.R.L</p>
+		</div> 
+		<div class="footer-rigth">
+			<img class="icon-android" src="css/android.png" alt="logo android" width="35" height="35">	
+		</div>	
+	</footer>
+	<!--footer-->
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>debuger</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" href="css/android_icon.png">
+	<!--<link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/v0bcab1972c3b1579b82e221c810ad3eb061cbd75c8520328bda82087ceb07528/android/images/favicon.png">-->
+</head>
+<body>
+	<!--header-->
+	<header>
+		<div class="titulo">
+			<h1 class="titulo-android">ANDROID STUDIO</h1>
+			<!--<a href="index.html" class="link-image"><img src="css/android.jpg" class="image-android" width="250" height="250"></a>-->
+		</div>
+		<div class="top-bar">
+			<ul>
+				<a href="index.html"><li>Home</li></a>
+				<a href="requisitos.html"><li> Requisitos S.O</li></a>
+				<a href="instalacion.html"><li>Instalacion</li></a>
+				<a href="accesodirecto.html"><li>Guia del Usuario</li></a>
+				<a href="integracion.html"><li>Integracion GitHub</li></a>
+				<a href="debuger.html"><li>Debugar Codigo</li></a>
+			</ul>
+		</div>
+	</header>
+	<!--header-->
+	<div class="content">
+		<h3 style="padding-bottom: 10px;">Cómo depurar tu app</h3>
+		<p><b>Android Studio</b> proporciona un depurador que te permite realizar las siguientes acciones y más:</p>
+		<ul>
+			<li>Seleccionar un dispositivo en el cual depurarás tu app</li>
+			<li>Establecer interrupciones en tu código <b>Java</b>, <b>Kotlin</b> y <b>C/C++</b></li>
+			<li>Examinar variables y evaluar expresiones en el tiempo de ejecución</li>
+		</ul>
+
+		<h3 style="padding: 10px 0;">Cómo iniciar la depuración</h3>
+		<p>En la barra de herramientas, selecciona el dispositivo en el que depurarás la app en el menú desplegable de dispositivos.</p>
+		<img src="css/deploy-run-app.png" width="900" height="400" alt="">
+		<p>Si no tienes ningún dispositivo configurado, debes conectar un dispositivo mediante <b>USB</b> o crear un <b>AVD</b> para usar el <b>emulador</b> de <b>Android</b>.</p>
+		<p>En la barra de herramientas, haz clic en <b>Debug</b><img style="position: relative; top: 10px; left: 10px;" src="https://developer.android.com/studio/images/buttons/toolbar-debug.png?hl=ES" width="40" height="40" alt=""></p>
+		<p>Si se muestra el diálogo <b>"switch from Run to Debug"</b> (cambiar del modo de ejecución al de depuración), significa que tu <b>app</b> ya se está ejecutando en el dispositivo y se reiniciará para comenzar con la depuración. Si prefieres conservar la misma instancia de la <b>app</b> en ejecución, haz clic en Cancel <b>Debug</b> y, en su lugar adjunta el depurador a la <b>app</b> en ejecución.</p>
+		<p>Si la ventana <b>Debug</b> no está abierta, selecciona <b>View > Tool Windows > Debug</b> (o haz clic en <b>Debug</b><img style="position: relative; top: 10px; margin: 0px 8px;" src="https://developer.android.com/studio/images/buttons/toolbar-debug.png?hl=ES" width="40" height="40" alt="">  en la barra de la ventana de herramientas) y, luego, haz clic en la pestaña <b>Debugger</b></p>
+		<img style="margin-left: 40px; padding-left: 20px;" src="css/debugger_2x.png" width="900" height="400" alt="">
+		<h3 style="padding-top: 20px;">Cómo ver y cambiar el formato de visualización de valores de los recursos</h3>
+		<p>En el modo de <b>depuración</b>, puedes ver los valores de los recursos y seleccionar un formato de visualización diferente para las variables en tu código <b>Java</b>. Con la pestaña Variables visible en un marco seleccionado, haz lo siguiente:</p>
+		<ul>
+			<li>En la lista <b>Variables</b>, haz clic con el botón derecho en cualquier parte de una línea de recursos para mostrar la lista desplegable.</li>
+			<li>En la lista desplegable, selecciona <b>View as</b> y elige el formato que quieras usar</li>
+			<li>Los formatos disponibles dependen del tipo de datos del recurso que selecciones. Es posible que veas una o más de las siguientes opciones:
+				<ul class="lista-padding" style="padding-left: 40px;">
+					<li><b>Class</b>: Se muestra la definición de la clase.</li>
+					<li><b>toString</b>: Se muestra el formato de la string.</li>
+					<li><b>Object</b>: Se muestra la definición del objeto (una instancia de una clase).</li>
+					<li><b>Array</b>: Se muestra un formato de arreglo.</li>
+					<li><b>Timestamp</b>: Se muestra la fecha y la hora en el siguiente formato: aaaa-mm-dd hh:mm:ss.</li>
+					<li><b>Auto</b>: Android Studio elige el mejor formato en función del tipo de datos.</li>
+					<li><b>Binary</b>: Se muestra un valor binario con ceros y unos.</li>
+					<li><b>Hex</b>: Se muestra un valor hexadecimal.</li>
+					<li><b>Primitive</b>: Se muestra un valor numérico con un tipo de datos primitivo.</li>
+					<li><b>Integer</b>: Se muestra un valor numérico del tipo Integer.</li>
+				</ul>
+			</li>
+		</ul>
+		<p style="padding-top: 20px;">Puedes crear un formato personalizado (representador del tipo de datos) de la siguiente manera:</p>
+		<ul>
+			<li>Haz clic con el botón derecho en el valor del recurso.</li>
+			<li>Selecciona <b>View as</b>.</li>
+			<li>Selecciona Create. Aparecerá el diálogo <b>Java Data Type Renderers</b>.</li>
+		</ul>
+	</div>
+	<!--footer-->
+	<footer id="footer">
+		<div class="footer-left">
+			<p>copyright© 2019 FLYPHI-BIT.S.R.L</p>
+		</div> 
+		<div class="footer-rigth">
+			<img class="icon-android" src="css/android.png" alt="logo android" width="35" height="35">	
+		</div>	
+	</footer>
+	<!--footer-->
+</body>
+</html>
